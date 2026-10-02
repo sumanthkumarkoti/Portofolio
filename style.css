@@ -1,0 +1,271 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #0b0f19;
+  color: #ffffff;
+  line-height: 1.6;
+}
+
+.profile-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    padding: 50px 8%;
+}
+
+.profile-container {
+    flex-shrink: 0;
+    margin: 0;
+}
+
+.profile-pic {
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid #00e5ff;
+    box-shadow: 0 0 20px rgba(0, 229, 255, 0.4);
+}
+
+.profile-text {
+    max-width: 550px;
+}
+
+.profile-pic:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 30px rgba(0, 229, 255, 0.7);
+}
+
+#navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 65px;
+  background: #111827;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 30px;
+  padding: 0 8%;
+  z-index: 1000;
+  border-bottom: 1px solid #263044;
+}
+
+#navbar a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+}
+
+#navbar a:hover {
+  color: #00e5ff;
+  transform: translateY(-2px);
+}
+
+#welcome-section {
+  height: 100vh;
+  min-height: 600px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background: linear-gradient(135deg, #0b0f19, #111827);
+  padding: 80px 20px 20px;
+}
+
+.welcome-content {
+  max-width: 800px;
+}
+
+.intro {
+  color: #00e5ff;
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+#welcome-section h1 {
+  font-size: 5rem;
+  margin-bottom: 10px;
+  letter-spacing: 2px;
+}
+
+.subtitle {
+  color: #aab4c5;
+  font-size: 1.3rem;
+  margin-bottom: 35px;
+}
+
+.button {
+  display: inline-block;
+  padding: 12px 28px;
+  border: 1px solid #00e5ff;
+  border-radius: 6px;
+  color: #00e5ff;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.button:hover {
+  background: #00e5ff;
+  color: #0b0f19;
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 229, 255, 0.35);
+}
+
+a {
+    color: #00e5ff;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #ffffff;
+}
+
+#projects {
+  min-height: 100vh;
+  padding: 100px 8%;
+  background: #111827;
+  text-align: center;
+}
+
+#projects h2,
+#contact h2 {
+  font-size: 2.5rem;
+  margin-bottom: 50px;
+}
+
+.project-grid {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+
+.project-tile {
+  background: #0b0f19;
+  border: 1px solid #263044;
+  border-radius: 10px;
+  padding: 30px;
+  text-align: left;
+  transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.project-tile:hover {
+  transform: translateY(-8px);
+  border-color: #00e5ff;
+}
+
+.project-tile h3 {
+  color: #00e5ff;
+  margin-bottom: 15px;
+}
+
+.project-tile p {
+  color: #aab4c5;
+  margin-bottom: 20px;
+}
+
+.project-tile a {
+  display: inline-block;
+  color: #ffffff;
+  text-decoration: none;
+  padding: 8px 16px;
+  border: 1px solid #263044;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+  margin-right: 15px;
+}
+
+.project-tile a:hover {
+  color: #0b0f19;
+  background: #00e5ff;
+  border-color: #00e5ff;
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(0, 229, 255, 0.3);
+}
+
+#contact {
+  min-height: 50vh;
+  padding: 100px 20px;
+  text-align: center;
+  background: #19243f;
+}
+
+#contact p {
+  color: #9facc2;
+  margin-bottom: 25px;
+}
+
+.contact-links {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+}
+
+#profile-link {
+  display: inline-block;
+  color: #00e5ff;
+  text-decoration: none;
+  border: 1px solid #00e5ff;
+  padding: 10px 25px;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+}
+
+#profile-link:hover {
+  background: #00e5ff;
+  color: #0b0f19;
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 229, 255, 0.663);  
+}
+
+/* Required media query */
+@media (max-width: 768px) {
+
+  #navbar {
+    justify-content: center;
+    gap: 18px;
+    padding: 0 15px;
+  }
+
+  #navbar a {
+    font-size: 0.9rem;
+  }
+
+  #welcome-section h1 {
+    font-size: 3.5rem;
+  }
+
+  .subtitle {
+    font-size: 1rem;
+  }
+
+  .project-grid {
+    grid-template-columns: 1fr;
+    gap: 25px;
+  }
+
+  #projects h2,
+  #contact h2 {
+    font-size: 2rem;
+  }
+
+  .profile-section {
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
+    }
+}
