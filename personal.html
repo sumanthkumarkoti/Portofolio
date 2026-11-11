@@ -4,299 +4,137 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sumanth's Portofolio</title>
+    <title>Sumanth's Portfolio</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <!-- ================= NAVBAR ================= -->
-
-    <nav id="navbar">
-
-        <a href="#welcome-section">Home</a>
-        <a href="#about">About</a>
-        <a href="#skills">Skills</a>
-        <a href="#projects">Projects</a>
-        <a href="#certifications">Certifications</a>
-        <a href="#contact">Contact</a>
-
+    <nav id="navbar" aria-label="Main navigation">
+        <a class="brand" href="index.html">Sumanth<span>.</span></a>
+        <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">&#9776;</button>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="personal.html#about">About</a>
+            <a href="personal.html#skills">Skills</a>
+            <a href="index.html#projects">Projects</a>
+            <a href="personal.html#certifications">Certifications</a>
+            <a href="#contact">Contact</a>
+        </div>
     </nav>
 
-
-    <!-- ================= HOME ================= -->
-
     <section id="welcome-section">
-
         <div class="welcome-content">
-
             <p class="intro">
                 Hey! I'm Sumanth, a sophomore at Indian Institute of Information Technology, Ranchi, Jharkhand, India.
-                My branch is Computer Science and Engineering with Specialization in Data Science and Artificail Intelligence.
+                My branch is Computer Science and Engineering with Specialization in Data Science and Artificial Intelligence.
             </p>
-
-            <h1>
-                Palli Sumanth Kumar Koti
-            </h1>
-
+            <h1>Palli Sumanth Kumar Koti</h1>
             <p class="subtitle">
                 My interests in tech are app development, web development, game development.
                 I'm also looking forward to move towards designing.
             </p>
-
-            <a class="button" href="#projects">
-                View My Work
-            </a>
-
+            <a class="button" href="#projects">View My Work</a>
         </div>
-
     </section>
-
-
-    <!-- ================= ABOUT ================= -->
 
     <section id="about">
-
         <h2>About Me</h2>
-
-        <div class="about-content">
-
-            <p>
+        <div class="about-wrap">
+            <img class="about-photo" src="Photos/Photo2.jpeg" alt="Sumanth by the water">
+            <div class="about-content">
                 <!-- Write about yourself -->
-            </p>
-
-            <p>
-                B.Tech at IIIT Ranchi in CSE_DSAI
-                
-            </p>
-
+                <p>B.Tech at IIIT Ranchi in CSE_DSAI</p>
+                <ul class="about-facts">
+                    <li><b>Institute</b>IIIT Ranchi, Jharkhand</li>
+                    <li><b>Branch</b>CSE with Data Science &amp; AI</li>
+                    <li><b>Year</b>Sophomore</li>
+                    <li><b>Interests</b>App, web &amp; game development</li>
+                </ul>
+            </div>
         </div>
-
     </section>
-
-
-    <!-- ================= SKILLS ================= -->
 
     <section id="skills">
-
         <h2>Skills</h2>
-
         <div class="skills-container">
-
             <div class="skill-category">
-
                 <h3>Web Development</h3>
-
-                <ul>
-                    <li>HTML5</li>
-                    <li>CSS3</li>
-                </ul>
-
+                <ul><li>HTML5</li><li>CSS3</li></ul>
             </div>
-
-
             <div class="skill-category">
-
                 <h3>Programming</h3>
-
-                <ul>
-                    <li>C</li>
-                    <li>Python</li>
-                </ul>
-
+                <ul><li>C</li><li>Python</li></ul>
             </div>
-
-
             <div class="skill-category">
-
                 <h3>Game Development</h3>
-
-                <ul>
-                    <li>C#</li>
-                </ul>
-
+                <ul><li>C#</li></ul>
             </div>
-
         </div>
-
     </section>
 
-
-    <!-- ================= PROJECTS ================= -->
-
     <section id="projects">
-
         <h2>My Projects</h2>
-
         <div class="project-grid">
-
             <div class="project-tile">
                 <h3>Game Development</h3>
                 <p>Future 3D and mobile game projects created with Unity and C#.</p>
-                <a href="game_dev.html" target="_blank">Learn More</a>
+                <a href="game_dev.html">Learn More</a>
             </div>
-
-
         </div>
-
     </section>
-
-
-    <!-- ================= CERTIFICATIONS ================= -->
 
     <section id="certifications">
-
         <h2>Certifications</h2>
-
         <div class="project-grid">
-
-
             <div class="project-tile">
-
                 <h3>C Certificate</h3>
-
-                <p>
-                    Issued by AH Career
-                </p>
-
-                <p>
-                    Issued on 30/08/2024
-                </p>
-
-                <a href="Certificates/C_Certificate.pdf"
-                target="_blank">
-                    View Certificate
-                </a>
-
+                <p>Issued by AH Career</p>
+                <p>Issued on 30/08/2024</p>
+                <a href="Certificates/C_Certificate.pdf" target="_blank" rel="noopener">View Certificate</a>
             </div>
-
-
             <div class="project-tile">
-
                 <h3>Python Certificate</h3>
-
-                <p>
-                    Issued by AH Career
-                </p>
-
-                <p>
-                    Issued on 31/07/2025
-                </p>
-
-                <a href="Certificates/Python_Certificate.pdf"
-                target="_blank">
-                    View Certificate
-                </a>
-
+                <p>Issued by AH Career</p>
+                <p>Issued on 31/07/2025</p>
+                <a href="Certificates/Python_Certificate.pdf" target="_blank" rel="noopener">View Certificate</a>
             </div>
-
-            
             <div class="project-tile">
-
                 <h3>C# Certificate</h3>
-
-                <p>
-                    Issued by FreeCodeCamp X Microsoft
-                </p>
-
-                <p>
-                    Issued on 12/09/2026
-                </p>
-
-                <a href="Certificates/C#_Certificate.pdf"
-                target="_blank">
-                    View Certificate
-                </a>
-
+                <p>Issued by FreeCodeCamp X Microsoft</p>
+                <p>Issued on 12/09/2026</p>
+                <a href="Certificates/CSharp_Certificate.pdf" target="_blank" rel="noopener">View Certificate</a>
             </div>
-
-
             <div class="project-tile">
-
                 <h3>HTML Certificate</h3>
-
-                <p>
-                    Issued by IBM Build
-                </p>
-
-                <p>
-                    Issued on 14/09/2026
-                </p>
-
-                <a href="Certificates/HTML_Certificate.pdf"
-                target="_blank">
-                    View Certificate
-                </a>
-
+                <p>Issued by IBM Build</p>
+                <p>Issued on 14/09/2026</p>
+                <a href="Certificates/HTML_Certificate.pdf" target="_blank" rel="noopener">View Certificate</a>
             </div>
-
-
             <div class="project-tile">
-
-                <h3>HTML & CSS Certificate</h3>
-
-                <p>
-                    Issued by FreeCodeCamp
-                </p>
-
-                <p>
-                    Issued on 23/09/2026
-                </p>
-
-                <a href="Certificates/HTML+CSS_Certificate.pdf"
-                target="_blank">
-                    View Certificate
-                </a>
-
+                <h3>HTML &amp; CSS Certificate</h3>
+                <p>Issued by FreeCodeCamp</p>
+                <p>Issued on 23/09/2026</p>
+                <a href="Certificates/HTML_CSS_Certificate.pdf" target="_blank" rel="noopener">View Certificate</a>
             </div>
-
-
         </div>
-
     </section>
-
-
-    <!-- ================= CONTACT ================= -->
 
     <section id="contact">
-
         <h2>Let's Connect</h2>
-
-        <p>
-            Contact me through
-        </p>
-
+        <p>Contact me through</p>
         <div class="contact-links">
-
-            <a href="mailto:pallisumanthkumarkoti@gmail.com">
-                Email
-            </a>
-
-            <a href="https://github.com/sumanthkumarkoti"
-               target="_blank">
-                GitHub
-            </a>
-
-            <a href="https://www.linkedin.com/in/sumanthkumarkoti/"
-               target="_blank">
-                LinkedIn
-            </a>
+            <a href="mailto:pallisumanthkumarkoti@gmail.com">Email</a>
+            <a href="https://github.com/sumanthkumarkoti" target="_blank" rel="noopener">GitHub</a>
+            <a href="https://www.linkedin.com/in/sumanthkumarkoti/" target="_blank" rel="noopener">LinkedIn</a>
             <a href="tel:+919848239269">Call Me</a>
-
         </div>
-
     </section>
 
-
-    <!-- ================= FOOTER ================= -->
-
     <footer>
-
-        <p>
-            <!-- Copyright / footer text -->
-        </p>
-
+        <p>&copy; 2026 Palli Sumanth Kumar Koti</p>
     </footer>
+    <script src="script.js"></script>
 
 </body>
 
